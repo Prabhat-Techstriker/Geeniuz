@@ -51,7 +51,6 @@ class Business extends Model
 					break;
 				}			
 			}
-		//return $query->orderBy('businesses.updated_at', 'DESC')->paginate(20);
 		return $query->with('images','businessTimings')->get();
 		
 	}
